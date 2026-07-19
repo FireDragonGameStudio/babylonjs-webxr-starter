@@ -52,6 +52,9 @@ export const xr = await scene.createDefaultXRExperienceAsync({
   // "hand-tracking" into the session request, like the XRButton
   // optionalFeatures option in the Three.js starter.
   optionalFeatures: true,
+  pointerSelectionOptions: {
+    enablePointerSelectionOnAllControllers: true,
+  },
 });
 
 // xr.baseExperience is undefined when the browser has no WebXR support —
